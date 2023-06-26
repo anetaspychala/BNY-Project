@@ -1,0 +1,116 @@
+#conteiner{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 20px;
+    color: #00243D;
+}
+#header {
+    height: 100px;
+    text-align: justify;
+    color: #E3EBED;
+    background-color: #00243D;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.logo-container {
+    float: left;
+}
+
+.text-container {
+    text-align: -webkit-center;
+}
+
+#currency-table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#currency-table th,
+#currency-table td {
+    padding: 1px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+#currency-table th {
+    background-color: #00243D;
+    color: #E3EBED;
+}
+
+#currency-table tbody tr:nth-child(even) {
+    background-color: #E3EBED;
+}
+.flag-cell{
+    display: flex;
+    align-items: center;
+}
+.flag-cell img {
+    margin-right: 10px;
+}
+#calculator{
+    background-color: #E3EBED;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+.conteiner{
+    height: 200px;
+    width: 70%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    -webkit-box-shadow: 3px 10px 33px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 3px 10px 33px -4px rgba(66, 68, 90, 1);
+    box-shadow: 3px 10px 33px -4px rgba(66, 68, 90, 1);
+}
+input{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+#amount{
+    float: left;
+}
+
+#currencyFrom{
+    float: left;
+}
+#currencyTo{
+    float: right;
+}
+#exchange{
+    float: right;
+}
+.leftLabel{
+    float: left;
+}
+.rightLabel{
+    float: right;
+}
+.transfer{
+ background-color: #00243D;
+    width: 150px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#footer{
+    height: 30px;
+    background-color: #00243D;
+    color: #E3EBED;
+}
