@@ -30,7 +30,7 @@
             <tr>
                 <th>Currency</th>
                 <th>Code</th>
-                <th>Avarage rate</th>
+                <th>Average rate</th>
             </tr>
             </thead>
             <tbody>
@@ -81,7 +81,9 @@
             <h1>Currency calculator</h1>
             <label for="amount" class="leftLabel"><b>From:</b></label>
             <label for="exchange" class="rightLabel"><b>Exchange to:</b></label>
-            <br>
+            <label for= "list" class="months"><b>Choose date:</b></label>
+            <select id="list"></select><br>
+            <span id ="selectedOptionText"></span>
             <input type="text" id="currencyFrom" list="CurrencyList" placeholder="Choose country">
             <datalist id="CurrencyList">
                 <option value="PLN">Polish Zloty</option>
@@ -103,8 +105,8 @@
         </div>
     </div>
 
-    <script src="Skript.js"></script>
-
+    <script type ="text/javascript" src="fxrate.js"></script>
+    <script src="website.js"></script>
         </div>
 
     <div id="footer">

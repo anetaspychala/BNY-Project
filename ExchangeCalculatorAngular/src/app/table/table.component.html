@@ -1,0 +1,19 @@
+<table>
+  <thead>
+  <tr>
+    <th>Currency</th>
+    <th>Code</th>
+    <th>Average rate</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let currency of CurrencyData">
+     <td class="flag-cell">
+       <img [src]="currency.flagSrc" [alt]="currency.currency + ' Flag'" width="40px" height="40px">
+      {{ currency.currency }}
+    </td>
+    <td>{{ currency.code }}</td>
+    <td>{{ currency.averageRate }}</td>
+  </tr>
+  </tbody>
+</table>
