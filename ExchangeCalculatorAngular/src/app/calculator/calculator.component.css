@@ -1,0 +1,47 @@
+#calculator{
+  height: 200px;
+  width: 98%;
+  background-color: #E3EBED;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 3px 10px 33px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 3px 10px 33px -4px rgba(66, 68, 90, 1);
+  box-shadow: 3px 10px 33px -4px rgba(66, 68, 90, 1);
+  border-radius: 10px;
+}
+input{
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+#amount{
+  float: left;
+}
+
+#currencyFrom{
+  float: left;
+}
+#currencyTo{
+  float: right;
+}
+#exchange{
+  float: right;
+}
+.leftLabel{
+  float: left;
+}
+.rightLabel{
+  float: right;
+}
+.transfer{
+  background-color: #00243D;
+  width: 150px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

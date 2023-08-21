@@ -1,0 +1,27 @@
+/*.conteiner{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 20px;
+  color: #00243D;
+}*/
+#header {
+  height: 100px;
+  color: #E3EBED;
+  background-color: #00243D;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+#logo-container {
+
+  float: left;
+}
+
+.text-container {
+  text-align: -webkit-center;
+
+}

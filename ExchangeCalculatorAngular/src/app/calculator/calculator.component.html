@@ -1,0 +1,26 @@
+<div id="calculator">
+  <div class="container">
+    <h1>Currency calculator</h1>
+    <label for="amount" class="leftLabel"><b>From:</b></label>
+    <label for="exchange" class="rightLabel"><b>Exchange to:</b></label>
+    <br>
+    <input type="text" id="currencyFrom" list="CurrencyList" placeholder="Choose country">
+    <datalist id="CurrencyList">
+      <option *ngFor="let option of currencyOptions" [value]="option.value">{{ option.label }}</option>
+    </datalist>
+    <input type="text" id="currencyTo" list="CurrencyList" placeholder="Choose country">
+    <br>
+
+    {{rootObject.rates.PLN}}
+    <br>
+    <input type="number" id="amount" placeholder="Enter amount">
+    <input type="number" id="exchange">
+   <!-- <button class="transfer" (click)="performExchange()">Transfer</button>-->
+    <br>
+  </div>
+</div>
+
+
+
+
+
