@@ -1,36 +1,22 @@
 <div id="calculator">
-  <div class="container">
-    <h1>Currency calculator</h1>
-    <label for="amount" class="leftLabel"><b>From:</b></label>
-    <label for="exchange" class="rightLabel"><b>Exchange to:</b></label>
-    <br>
-    <input type="text" [(ngModel)]="userChoice.currencyFrom" list="CurrencyList" placeholder="Choose country" id="currencyFrom">
-    <input type="text" [(ngModel)]="userChoice.currencyTo" list="CurrencyList" placeholder="Choose country" id="currencyTo">
-    <datalist id="CurrencyList">
-      <option *ngFor="let option of currencyOptions" [value]="option.value">{{ option.label }} </option>
-    </datalist><br>
-<<<<<<< Updated upstream
-
-    <br>
-    <input type="number" [(ngModel)]="userChoice.amount" placeholder="Enter amount" id="userInput">
-    <input type="number" [(ngModel)]="exchangeResult" id="result">
-    <br>
-    <br>
-    <button class="transfer" (click)="calculateExchange()">Transfer</button>
-=======
-    <button class="transfer" (click)="calculateExchange()">Transfer</button>
-    <br>
-    <input type="number" [(ngModel)]="userChoice.amount" placeholder="Enter amount" id="userInput">
-    <input type="number" [(ngModel)]="exchangeResult" id="result">
-    <br>
-    <br>
-
->>>>>>> Stashed changes
-    <br>
-  </div>
+    <div class="container">
+        <h1>Currency calculator</h1>
+        <label for="amount" class="leftLabel"><b>From:</b></label>
+        <label for="exchange" class="rightLabel"><b>Exchange to:</b></label>
+        <br>
+        <input type="text" [(ngModel)]="userChoice.currencyFrom" list="CurrencyList" placeholder="Choose country" id="currencyFrom">
+        <input type="text" [(ngModel)]="userChoice.currencyTo" list="CurrencyList" placeholder="Choose country" id="currencyTo">
+        <datalist id="CurrencyList">
+            <option *ngFor="let option of currencyOptions" [value]="option.value">{{ option.label }}</option>
+        </datalist>
+        <br>
+        <button class="transfer" (click)="calculateExchange()">Transfer</button>
+        <br>
+        <input type="number" [(ngModel)]="userChoice.amount" placeholder="Enter amount" id="userInput">
+        <input type="number" [(ngModel)]="exchangeResult" id="result">
+        <br>
+    </div>
 </div>
-
-
 
 
 
