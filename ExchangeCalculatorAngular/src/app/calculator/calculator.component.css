@@ -17,18 +17,17 @@ input{
   border-radius: 5px;
   border: 2px solid #ddd;
 }
-#amount{
-  float: left;
-}
-
 #currencyFrom{
   float: left;
 }
 #currencyTo{
   float: right;
 }
-#exchange{
+#result{
   float: right;
+}
+#userInput{
+  float: left;
 }
 .leftLabel{
   float: left;

@@ -9,6 +9,7 @@
     <datalist id="CurrencyList">
       <option *ngFor="let option of currencyOptions" [value]="option.value">{{ option.label }} </option>
     </datalist><br>
+<<<<<<< Updated upstream
 
     <br>
     <input type="number" [(ngModel)]="userChoice.amount" placeholder="Enter amount" id="userInput">
@@ -16,6 +17,15 @@
     <br>
     <br>
     <button class="transfer" (click)="calculateExchange()">Transfer</button>
+=======
+    <button class="transfer" (click)="calculateExchange()">Transfer</button>
+    <br>
+    <input type="number" [(ngModel)]="userChoice.amount" placeholder="Enter amount" id="userInput">
+    <input type="number" [(ngModel)]="exchangeResult" id="result">
+    <br>
+    <br>
+
+>>>>>>> Stashed changes
     <br>
   </div>
 </div>

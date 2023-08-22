@@ -10,7 +10,11 @@ import { HttpClient } from '@angular/common/http';
 export class CalculatorComponent {
   userChoice: UserChoose = new UserChoose('', '', 0);
   exchangeResult: number = 0;
+<<<<<<< Updated upstream
   rootObject: RootObject= {
+=======
+  rootObject: RootObject = {
+>>>>>>> Stashed changes
     result: '',
     provider: '',
     documentation: '',
@@ -188,20 +192,23 @@ export class CalculatorComponent {
   };
 
   currencyOptions = [
-    { value: 'PLN', label: 'Polish Zloty', },
-    { value: 'USD', label: 'US Dollar' },
-    { value: 'EUR', label: 'Euro' },
-    { value: 'CAD', label: 'Canadian Dollar' },
-    { value: 'CHF', label: 'Swiss Franc' },
-    { value: 'GBP', label: 'Pound Sterling' },
-    { value: 'CZK', label: 'Czech Koruna' },
-    { value: 'NOK', label: 'Norwegian Krone' }
+    {value: 'PLN', label: 'Polish Zloty',},
+    {value: 'USD', label: 'US Dollar'},
+    {value: 'EUR', label: 'Euro'},
+    {value: 'CAD', label: 'Canadian Dollar'},
+    {value: 'CHF', label: 'Swiss Franc'},
+    {value: 'GBP', label: 'Pound Sterling'},
+    {value: 'CZK', label: 'Czech Koruna'},
+    {value: 'NOK', label: 'Norwegian Krone'}
   ];
+
   constructor(private CurrencyClientService: CurrencyClientService) {
   }
-  ngOnInit(){
+
+  ngOnInit() {
     this.implementsCurrency()
   }
+
   implementsCurrency() {
     this.CurrencyClientService.getCurrency().subscribe(value => {
       this.rootObject = value;
@@ -213,9 +220,15 @@ export class CalculatorComponent {
     const currencyTo = this.userChoice.currencyTo;
 
     if (
+<<<<<<< Updated upstream
         this.rootObject.rates[currencyFrom] &&
         this.rootObject.rates[currencyTo] &&
         !isNaN(amount)
+=======
+      this.rootObject.rates[currencyFrom] &&
+      this.rootObject.rates[currencyTo] &&
+      !isNaN(amount)
+>>>>>>> Stashed changes
     ) {
       const exchangeRateFrom = this.rootObject.rates[currencyFrom];
       const exchangeRateTo = this.rootObject.rates[currencyTo];
@@ -223,6 +236,21 @@ export class CalculatorComponent {
       this.exchangeResult = convertedAmount;
     }
   }
+<<<<<<< Updated upstream
+=======
+}
+
+export class UserChoose {
+  currencyFrom: string;
+  currencyTo: string;
+  amount: number;
+
+  constructor(currencyFrom: string, currencyTo: string, amount: number) {
+    this.currencyFrom = currencyFrom;
+    this.currencyTo = currencyTo;
+    this.amount = amount;
+  }
+>>>>>>> Stashed changes
 }
 
 export class UserChoose {

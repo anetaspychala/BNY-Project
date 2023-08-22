@@ -16,6 +16,7 @@ export class CurrencyClientService {
   }
 }
 export interface Rates {
+  [key: string]: number;
   EUR: number;
   AED: number;
   AFN: number;
