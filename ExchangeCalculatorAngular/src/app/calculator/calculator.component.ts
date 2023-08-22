@@ -8,6 +8,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent {
+  userChoice: UserChoose = new UserChoose('', '', 0);
+  exchangeResult: number = 0;
   rootObject: RootObject= {
     result: '',
     provider: '',
@@ -205,5 +207,33 @@ export class CalculatorComponent {
       this.rootObject = value;
     });
   }
+  calculateExchange() {
+    const amount = this.userChoice.amount;
+    const currencyFrom = this.userChoice.currencyFrom;
+    const currencyTo = this.userChoice.currencyTo;
 
+    if (
+        this.rootObject.rates[currencyFrom] &&
+        this.rootObject.rates[currencyTo] &&
+        !isNaN(amount)
+    ) {
+      const exchangeRateFrom = this.rootObject.rates[currencyFrom];
+      const exchangeRateTo = this.rootObject.rates[currencyTo];
+      const convertedAmount = (amount / exchangeRateFrom) * exchangeRateTo;
+      this.exchangeResult = convertedAmount;
+    }
+  }
 }
+
+export class UserChoose {
+  currencyFrom: string;
+  currencyTo: string;
+  amount: number;
+
+  constructor(currencyFrom: string, currencyTo: string, amount: number) {
+    this.currencyFrom = currencyFrom;
+    this.currencyTo = currencyTo;
+    this.amount = amount;
+  }
+}
+
