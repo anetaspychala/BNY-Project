@@ -204,7 +204,9 @@ export class CurrencyTableComponent implements OnInit {
         {currency: 'Swiss Franc', code: 'CHF', averageRate: this.rootObject.rates.CHF.toFixed(2), flagSrc: "../assets/sflag.png"},
         {currency: 'Pound Sterling', code: 'GBP', averageRate: this.rootObject.rates.GBP.toFixed(2), flagSrc: "../assets/gbflag.jpg"},
         {currency: 'Czech Koruna', code: 'CZK', averageRate: this.rootObject.rates.CZK.toFixed(2), flagSrc: "../assets/CZKFlag.jpg"},
-        {currency: 'Norwegian Krone', code: 'NOK', averageRate: this.rootObject.rates.NOK.toFixed(2), flagSrc: "../assets/norflag.png"}
+        {currency: 'Norwegian Krone', code: 'NOK', averageRate: this.rootObject.rates.NOK.toFixed(2), flagSrc: "../assets/norflag.png"},
+        {currency: 'Georgian Lari', code: 'GEL', averageRate: this.rootObject.rates.GEL.toFixed(2), flagSrc: "../assets/GEL.jpg"},
+        {currency: 'Ukrainian Hrywna', code: 'UAH', averageRate: this.rootObject.rates.UAH.toFixed(2), flagSrc: "../assets/ua.png"}
       ];
     });
   }
