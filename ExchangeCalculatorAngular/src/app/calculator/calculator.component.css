@@ -18,15 +18,19 @@ input{
   border: 2px solid #ddd;
 }
 #currencyFrom{
+  font-size: 15px;
   float: left;
 }
 #currencyTo{
+  font-size: 15px;
   float: right;
 }
 #result{
+  font-size: 15px;
   float: right;
 }
 #userInput{
+  font-size: 15px;
   float: left;
 }
 .leftLabel{
@@ -37,6 +41,7 @@ input{
 }
 .transfer{
   background-color: #00243D;
+  font-size: 15px;
   width: 150px;
   color: white;
   padding: 10px 20px;
