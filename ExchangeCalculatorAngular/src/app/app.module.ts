@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http'; // Dodaj import dla HttpClientModule
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CurrencyTableComponent } from './table/table.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { HeaderComponent } from './header/header.component';
-
+import {DataServiceService} from './services/data-service.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,7 @@ import { HeaderComponent } from './header/header.component';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [DataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

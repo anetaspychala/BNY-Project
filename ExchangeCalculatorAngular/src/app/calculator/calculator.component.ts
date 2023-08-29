@@ -195,20 +195,23 @@ export class CalculatorComponent {
     {value: 'CHF', label: 'Swiss Franc'},
     {value: 'GBP', label: 'Pound Sterling'},
     {value: 'CZK', label: 'Czech Koruna'},
-    {value: 'NOK', label: 'Norwegian Krone'}
+    {value: 'NOK', label: 'Norwegian Krone'},
+    {value: 'RUB', label: 'Russian Rubel'},
+    {value: 'SEK', label: 'Swedish Krone'},
+    {value: 'AED', label: 'ZEA Dirham'},
+    {value: 'GEL', label: 'Georgian Lari'},
+    {value: 'UAH', label: 'Ukrainian Hryvnia'}
   ];
-
-  constructor(private CurrencyClientService: CurrencyClientService) {
-  }
+  constructor(
+      private CurrencyClientService: CurrencyClientService) {}
 
   ngOnInit() {
     this.implementsCurrency()
+    this.currencyOptions.sort((a, b) => a.label.localeCompare(b.label));
   }
-
   implementsCurrency() {
     this.CurrencyClientService.getCurrency().subscribe(value => {
-      this.rootObject = value;
-    });
+      this.rootObject = value;});
   }
   calculateExchange() {
     const amount = this.userChoice.amount;
@@ -226,6 +229,7 @@ export class CalculatorComponent {
       this.exchangeResult = convertedAmount;
     }
   }
+
  }
 
 export class UserChoose {

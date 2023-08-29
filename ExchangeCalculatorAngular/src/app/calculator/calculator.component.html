@@ -1,7 +1,7 @@
 <div id="calculator">
     <div class="container">
         <h1>Currency calculator</h1>
-        <label for="amount" class="leftLabel"><b>From:</b></label>
+        <label for='amount' class="leftLabel"><b>From:</b></label>
         <label for="exchange" class="rightLabel"><b>Exchange to:</b></label>
         <br>
         <input type="text" [(ngModel)]="userChoice.currencyFrom" list="CurrencyList" placeholder="Choose country" id="currencyFrom">
@@ -15,6 +15,7 @@
         <input type="number" [(ngModel)]="userChoice.amount" placeholder="Enter amount" id="userInput">
         <input type="number" [(ngModel)]="exchangeResult" id="result">
         <br>
+
     </div>
 </div>
 
