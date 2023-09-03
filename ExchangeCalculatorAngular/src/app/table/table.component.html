@@ -1,3 +1,4 @@
+<script src="table.component.ts"></script>
 <div id="currency-table-container">
 <table id ="currency-table">
   <thead>
@@ -10,7 +11,7 @@
   <tbody>
   <tr *ngFor="let currency of CurrencyData">
      <td class="flag-cell">
-       <img [src]="currency.flagSrc" [alt]="currency.currency + ' Flag'" width="35px" height="30px">
+       <img [src]="currency.flagSrc" [alt]="currency.currency + ' Flag'" width="35px" height="25px">
       {{ currency.currency }}
     </td>
     <td>{{ currency.code }}</td>

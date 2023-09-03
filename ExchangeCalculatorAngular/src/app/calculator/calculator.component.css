@@ -16,27 +16,34 @@ input{
   height: 30px;
   border-radius: 5px;
   border: 2px solid #ddd;
+
 }
 #currencyFrom{
   font-size: 15px;
   float: left;
+  margin-left: 30px;
 }
 #currencyTo{
   font-size: 15px;
   float: right;
+  margin-right: 30px;
 }
 #result{
   font-size: 15px;
   float: right;
+  margin-right: 30px;
 }
 #userInput{
   font-size: 15px;
   float: left;
+  margin-left: 30px;
 }
 .leftLabel{
+  margin-left: 30px;
   float: left;
 }
 .rightLabel{
+  margin-right: 300px;
   float: right;
 }
 .transfer{

@@ -1,13 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core'
-import {CalculatorComponent} from "../calculator/calculator.component";
 import {CurrencyClientService, RootObject, Rates} from "../services/currency-client.service";
-import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css']
 })
-
 export class CurrencyTableComponent implements OnInit {
   rootObject: RootObject = {
     result: '',
@@ -197,14 +194,14 @@ export class CurrencyTableComponent implements OnInit {
     this.CurrencyClientService.getCurrency().subscribe((value: RootObject) => {
       this.rootObject = value;
       this.CurrencyData = [
-        { currency: 'Euro', code: 'EUR', averageRate: this.rootObject.rates.EUR.toFixed(2), flagSrc: "../assets/EURO.png" },
-        { currency: 'US Dollar', code: 'USD', averageRate: this.rootObject.rates.USD.toFixed(2), flagSrc: "../assets/usflag.png" },
-        { currency: 'Polish Zloty', code: 'PLN', averageRate: this.rootObject.rates.PLN.toFixed(2), flagSrc: "../assets/plflag.png" },
-        {currency: 'Canadian Dollar', code: 'CAD', averageRate: this.rootObject.rates.CAD.toFixed(2), flagSrc: "../assets/CADFlag.jpg"},
-        {currency: 'Swiss Franc', code: 'CHF', averageRate: this.rootObject.rates.CHF.toFixed(2), flagSrc: "../assets/sflag.png"},
-        {currency: 'Pound Sterling', code: 'GBP', averageRate: this.rootObject.rates.GBP.toFixed(2), flagSrc: "../assets/gbflag.jpg"},
-        {currency: 'Czech Koruna', code: 'CZK', averageRate: this.rootObject.rates.CZK.toFixed(2), flagSrc: "../assets/CZKFlag.jpg"},
-        {currency: 'Norwegian Krone', code: 'NOK', averageRate: this.rootObject.rates.NOK.toFixed(2), flagSrc: "../assets/norflag.png"},
+        { currency: 'Euro', code: 'EUR', averageRate: this.rootObject.rates.EUR.toFixed(2), flagSrc: "../assets/eu.jpg" },
+        { currency: 'US Dollar', code: 'USD', averageRate: this.rootObject.rates.USD.toFixed(2), flagSrc: "../assets/US_flag.png" },
+        { currency: 'Polish Zloty', code: 'PLN', averageRate: this.rootObject.rates.PLN.toFixed(2), flagSrc: "../assets/pl.png" },
+        {currency: 'Canadian Dollar', code: 'CAD', averageRate: this.rootObject.rates.CAD.toFixed(2), flagSrc: "../assets/ca.png"},
+        {currency: 'Swiss Franc', code: 'CHF', averageRate: this.rootObject.rates.CHF.toFixed(2), flagSrc: "../assets/swiss.png"},
+        {currency: 'Pound Sterling', code: 'GBP', averageRate: this.rootObject.rates.GBP.toFixed(2), flagSrc: "../assets/gb.png"},
+        {currency: 'Czech Koruna', code: 'CZK', averageRate: this.rootObject.rates.CZK.toFixed(2), flagSrc: "../assets/czech.jpg"},
+        {currency: 'Norwegian Krone', code: 'NOK', averageRate: this.rootObject.rates.NOK.toFixed(2), flagSrc: "../assets/Flag_No.png"},
         {currency: 'Georgian Lari', code: 'GEL', averageRate: this.rootObject.rates.GEL.toFixed(2), flagSrc: "../assets/GEL.jpg"},
         {currency: 'Ukrainian Hrywna', code: 'UAH', averageRate: this.rootObject.rates.UAH.toFixed(2), flagSrc: "../assets/ua.png"}
       ];

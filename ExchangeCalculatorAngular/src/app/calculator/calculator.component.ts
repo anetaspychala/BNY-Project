@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import {CurrencyClientService, RootObject, Rates} from "../services/currency-client.service";
-import { HttpClient } from '@angular/common/http';
-
+import {CurrencyClientService, RootObject} from "../services/currency-client.service";
 @Component({
   selector: 'app-calculator',
   templateUrl: './calculator.component.html',
@@ -229,9 +227,7 @@ export class CalculatorComponent {
       this.exchangeResult = convertedAmount;
     }
   }
-
  }
-
 export class UserChoose {
   currencyFrom: string;
   currencyTo: string;

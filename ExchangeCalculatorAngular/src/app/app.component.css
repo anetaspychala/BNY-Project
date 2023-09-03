@@ -1,14 +1,6 @@
-
-.flag-cell{
-  display: flex;
-  align-items: center;
-}
-.flag-cell img {
-  margin-right: 10px;
-}
-
 #footer{
   height: 30px;
   background-color: #00243D;
   color: #E3EBED;
+
 }
