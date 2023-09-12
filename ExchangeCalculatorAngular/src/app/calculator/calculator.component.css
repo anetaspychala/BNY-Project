@@ -1,6 +1,6 @@
 #calculator{
   height: 200px;
-  width: 98%;
+  width: 94%;
   background-color: #E3EBED;
   justify-content: center;
   text-align: center;
@@ -10,6 +10,13 @@
   -moz-box-shadow: 3px 10px 33px -4px rgba(66, 68, 90, 1);
   box-shadow: 3px 10px 33px -4px rgba(66, 68, 90, 1);
   border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.title{
+  color: #F75C8F;
+  text-transform: uppercase;
+  font-family: "Arial Black", sans-serif;
 }
 input{
   width: 350px;

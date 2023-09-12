@@ -1,19 +1,35 @@
+#currencyTab{
+  color: #FF6120;
+  font-family: "Arial Black", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: -moz-left;
+  font-size: 20px;
+  padding-left: 15px;
+}
 #currency-table{
-  width: 100%;
+  width: 98%;
   border-collapse: collapse;
   padding: 1%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   text-align: center;
   font-size: 20px;
+  color: #00243D;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-family: "Times New Roman", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 #currency-table th,
 #currency-table td {
-  padding: 1px;
+  padding: 2px;
   text-align: left;
   border-bottom: 1px solid #ccc;
 }
 
 #currency-table th {
+  padding: 2px;
   background-color: #00243D;
   color: #E3EBED;
   height: 25px;

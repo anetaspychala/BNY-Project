@@ -1,5 +1,4 @@
-let data =[
-
+let month =[
     {
         "Column1": "January 2020",
         "Column2": "Eanáir 2020",

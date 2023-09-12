@@ -1,13 +1,17 @@
 #header {
   height: 120px;
-  color: #E3EBED;
+  color: #F5E02E;
+  text-transform: uppercase;
+  font-family: "Arial Black", sans-serif;
   background-color: #00243D;
+  font-size: 25px;
   align-items: center;
   margin: 2px;
-  padding: 10px;
+  padding: 2px;
 }
 .logo-container {
   float: left;
+  transform: translate(0%,-50%);
 }
 
 .text-container {

@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import {CurrencyClientService, RootObject} from "../services/currency-client.service";
+
 @Component({
   selector: 'app-calculator',
   templateUrl: './calculator.component.html',
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent {
+  selectedMonth: any;
   userChoice: UserChoose = new UserChoose('', '', 0);
   exchangeResult: number = 0;
   rootObject: RootObject = {
@@ -200,13 +202,12 @@ export class CalculatorComponent {
     {value: 'GEL', label: 'Georgian Lari'},
     {value: 'UAH', label: 'Ukrainian Hryvnia'}
   ];
-  constructor(
-      private CurrencyClientService: CurrencyClientService) {}
+  constructor(private CurrencyClientService: CurrencyClientService) {}
 
   ngOnInit() {
     this.implementsCurrency()
     this.currencyOptions.sort((a, b) => a.label.localeCompare(b.label));
-  }
+   }
   implementsCurrency() {
     this.CurrencyClientService.getCurrency().subscribe(value => {
       this.rootObject = value;});
@@ -215,7 +216,6 @@ export class CalculatorComponent {
     const amount = this.userChoice.amount;
     const currencyFrom = this.userChoice.currencyFrom;
     const currencyTo = this.userChoice.currencyTo;
-
     if (
         this.rootObject.rates[currencyFrom] &&
         this.rootObject.rates[currencyTo] &&
@@ -227,7 +227,8 @@ export class CalculatorComponent {
       this.exchangeResult = convertedAmount;
     }
   }
- }
+}
+
 export class UserChoose {
   currencyFrom: string;
   currencyTo: string;

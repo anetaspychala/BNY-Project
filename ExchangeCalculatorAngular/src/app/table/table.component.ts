@@ -6,6 +6,7 @@ import {CurrencyClientService, RootObject, Rates} from "../services/currency-cli
   styleUrls: ['./table.component.css']
 })
 export class CurrencyTableComponent implements OnInit {
+
   rootObject: RootObject = {
     result: '',
     provider: '',

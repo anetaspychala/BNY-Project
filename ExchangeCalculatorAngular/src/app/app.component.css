@@ -1,6 +1,15 @@
+
 #footer{
   height: 30px;
   background-color: #00243D;
   color: #E3EBED;
-
+  text-align: -moz-center;
+  padding: 2px;
+}
+.flag-cell img{
+  margin-right: 10px;
+}
+.flag-cell{
+  display: flex;
+  align-items: center;
 }
